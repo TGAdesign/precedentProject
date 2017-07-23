@@ -26,10 +26,10 @@ h1, h2, h3, h4
 h2
     @include headingprop(40px, 60px, 100px, 70px)
     small
-        display:block
+        display: block !important   
+    @media (max-width: 600px)
+        @include headingprop(80px, 30px, 60px, 60px)
+    @media (max-width: 321px)
+        @include headingprop(110px, 10px, 22px, 22px)
+    
 
-// Vertically center anything
-.vertical-center 
-  display: flex
-  align-items: center
-  justify-content: center
