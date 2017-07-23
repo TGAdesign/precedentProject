@@ -1,11 +1,11 @@
 function initializeBxSlider() {
     $('.bxslider').bxSlider({
-      infiniteLoop: false
+        pager: false
     });
 }
 
 
-$( document ).ready(function() {
+$(document).ready(function() {
     
     initializeBxSlider();
     

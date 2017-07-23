@@ -1,0 +1,67 @@
+// Custom styling 
+
+/* header custom style
+
+body
+    position: relative
+
+header
+    position: absolute
+    top: 30px
+    left: 70px
+    z-index: 9999
+    display: block
+
+/* Button custom style
+
+@mixin transition ($duration)
+    -webkit-transition: all $duration ease
+    -moz-transition: all $duration ease
+    -ms-transition: all $duration ease
+    -o-transition: all $duration ease
+    transition: all $duration ease
+ 
+@mixin btn-effect ($position)
+    border-top: 1px solid #ff8800    
+    left: 50%
+    position: absolute
+    @if $position
+        top: 0
+    @else
+        bottom: 0
+    transform: translateX(-50%)
+    @include transition(0.2s)
+    width: 0
+    content: " "
+
+.btn 
+    color: #fff
+    border-color: #fff
+    border-radius: 0    
+    position: relative
+    @include transition(0.7s)
+        
+    &:hover
+        color: #ff8800 
+        border-color: transparent
+        &:before
+            width: 100%
+        &:after
+            width: 100%
+    &:before   
+        @include btn-effect(true)
+                
+    &:after   
+        @include btn-effect(false)
+        
+/* bxslider custom style
+
+.bxslider
+    >li
+        >div 
+            position: relative
+            top: 50%
+            transform: translateY(-50%)
+        p
+            margin-bottom: 40px
+            

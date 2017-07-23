@@ -1,0 +1,60 @@
+$green-color: #8EC244
+$orange-color: #ff8800
+$violet-color: #CD3893
+//  Custom Bxslider stylesheet
+
+.bxslider
+    
+    li
+        height: 100vh
+        color: #fff
+        background-size: cover
+        
+        
+    li:nth-child(2)         
+        background: #fff url(../images/bg-slider1.jpg) no-repeat center center
+        small
+            color: $green-color
+        
+        .btn
+            &:hover
+                color: $green-color 
+            &:before
+                border-color: $green-color !important
+            &:after
+                border-color: $green-color !important
+        
+    li:nth-child(3)
+        background: #fff url(../images/bg-slider2.jpg) no-repeat center center
+        small
+            color: $orange-color
+        .btn
+            &:hover
+               color: $orange-color
+    
+    li:nth-child(4)
+        background: #fff url(../images/bg-slider3.jpg) no-repeat center center
+        small
+            color: $violet-color
+        .btn
+            &:hover
+               color: $violet-color
+            &:before
+                border-color: $violet-color !important
+            &:after
+                border-color: $violet-color !important
+    
+.bx-controls
+    
+    a
+        font-family: FontAwesome;
+        color: #fff
+        
+        &:hover, &:focus, &:active
+            text-decoration: none
+        
+        &.bx-prev:before
+            content: "\f053"    
+            
+        &.bx-next:before
+            content: "\f054"
