@@ -63,13 +63,12 @@ header
             transform: rotate(-90deg) translate(-13px, -20px)
 
 nav
-    position: relative
-    position: absolute
+    position: fixed
     top: 0
     left: 0
     right: 0
     height: 0vh
-    background-color: rgba(71,71,71,0.8)
+    background-color: rgba(71,71,71,0.9)
     z-index: 1023
     @include transition(0.4s)
     ul 
@@ -127,7 +126,7 @@ nav
     &:after   
         @include btn-effect(false)
         
-/* bxslider custom style
+// bxslider custom style
 
 .bxslider
     >li
@@ -138,3 +137,15 @@ nav
         p
             margin-bottom: 40px
             
+// Footer styling
+
+footer
+    padding: 60px 0
+    color: #fff
+    background-color: #41B5CA
+    input
+        padding: 5px 10px
+        width: 50%
+        border: solid #fff
+        border-width: 0 0 1px 0
+        background: transparent
